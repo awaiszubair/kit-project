@@ -1,0 +1,155 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/dashboard.css">
+    <link rel="shortcut icon" href="./Assets/Imgs/drive-download-20230809T152252Z-001/favicon_io/favicon.ico" type="image/x-icon">
+    <!-- CSS File link -->
+    <!-- <link rel="stylesheet" href="./style/style.css" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="style/responsive.css">
+
+    <link
+    href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,300;0,400;0,500;0,700;1,100&display=swap"
+    rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main-1,.main-2{
+            border: 1px solid black;
+            background-color:  #f6f6f6;
+            /* height: 100%; */
+        }
+        .main-1{width: 20vw;}
+        .main-2{width: 80vw;}
+        .main{
+            display: flex;
+            justify-content: stretch;
+            align-items: stretch;
+            width: 100%;
+            height: 150%;
+            /* position: relative; */
+        }
+        .main-1 ul{
+            width: 100%;
+            height: 100%;
+            /* border: 1px solid black; */
+            display: flex;
+            flex-direction: column;
+            justify-content:space-around;
+            align-items: center;
+        }
+        .main-1 ul li{width: 100%;padding: 1rem;cursor: pointer;}
+        .main-1 ul li span{margin-right: 1rem;margin-left: 1.5rem;}
+        .main-1 a{text-decoration: none;color: black;padding: 1rem;}
+        .heading{width: 100%;display: flex;justify-content: center;align-items: center;padding: 1rem;}
+        .options{width: 100%;border: 1px solid black;display: flex;justify-content: space-evenly;align-items: center;padding: 0.5rem;}
+        .products{width: 100%;height: auto;border: 1px solid black;}
+        .box{border: 1px solid black;background-color: snow;width: 100%;min-height: 5%;
+        }
+        .box-1{
+            display: grid;
+            grid-template-columns: 100px 300px 300px;
+            grid-template-rows: 50px 50px 50px;
+        grid-template-areas: 
+        "box1 box2"
+        "box1 box3";
+        /* justify-content: center; */
+        /* border: 1px solid black; */
+        width: 30%;
+        margin-top: 1rem;
+        }
+        .boxing{
+            /* border: 1px solid black; */
+            background-color: red;
+        }
+        .box1{grid-area: box1;} .box2{grid-area: box2;} .box3{grid-area: box3;}.box4{grid-area: box4;}.box5{grid-area: box5;}
+        table th{border: 1px solid black;}
+        table td{border: 1px solid black;text-align: center;}
+        table td button{padding: 0.3rem;background-color: black;color: white;cursor: pointer;}
+        .campaign-form input{padding: 0.4rem;margin-top: 0.3rem;}
+        .campaign-form div{
+            margin-top: 1rem;
+        }
+        button{padding: 0.3rem;background-color: black;color: white;}
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="./Assets/Imgs/drive-download-20230809T152252Z-001/Untitled-1 [Recovered].png" alt="Site-logo"></a>
+        <ul class="navmenu">
+            <li><a href="./Home.html">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="./contactus.html">Contact Us</a></li>
+        </ul>
+        <div class="nav-icon">
+            <a href="#"><i class='bx bx-search'></i></a>
+            <a href="#"><i class="bx bx-user"></i></a>
+            <a href="#trending"><i class="bx bx-cart"></i></a>
+            <!-- <div class="bx bx-menu" id="menu-icon"></div> -->
+        </div>   
+    </header>
+    <div class="main" style="border: 1px solid black;height: auto;background-color:red;">
+    <div class="main-1">
+        <ul>
+            <li ><a href="dashboard.html" ><span><i class="fa fa-camera-retro" aria-hidden="true"></i></span>Products</a></li>
+             <li> <a href="orders.html"><span><i class="fa fa-credit-card" aria-hidden="true"></i></span>Orders</a></li>
+              <li><a href="users.html"><span><i class="fa fa-users" aria-hidden="true"></i></span>Users</a></li>
+           <li>   <a href="analytics.html"><span><i class="fa fa-pie-chart" aria-hidden="true"></i></span>Analytics</a></li>
+             <li style="background-color: black;color: white;"> <a href="marketing.html" style="color: white;"><span><i class="fa fa-globe" aria-hidden="true"></i></span>Marketing</a></li>
+          <li><a href="setting.html"><span><i class="fa fa-cogs" aria-hidden="true"></i></span>Settings</a></li>
+          </ul>
+    </div>
+    <div class="main-2">
+       <div class="heading">Add Campaign</div>
+        <div class="campaign-form" style="height: auto;display: flex;flex-direction: column;justify-content: center;align-items: center;">
+            <div>
+            Enter Product Name:<input type="text" placeholder="Enter Product Name"><br>
+            </div>
+            <div>
+            Enter Product Title:<input type="text" placeholder="Enter Product Title"><br>
+            </div>
+            <div>
+            Enter Product Description<input type="text" placeholder="Enter Product Description"><br>
+            </div>
+            <input type="file" placeholder="Choose image"><br>
+            <select name="" id="">
+                <option value="">Choose Audience Interest</option>
+                <option value="">Cloth</option>
+                <option value="">Electronics</option>
+                <option value="">Furnitures</option>
+            </select><br>
+            <select name="" id="">
+                <option value="">Choose Audience Gender</option>
+                <option value="">Male</option>
+                <option value="">Female</option>
+                <option value="">Both</option>
+            </select><br>
+            <select name="" id="">
+                <option value="">Select Audience Age Range</option>
+                <option value="">5-10</option>
+                <option value="">10-20</option>
+                <option value="">20-30</option>
+            </select><br>
+            Start Date:<input type="date"><br>
+            Expiry Date: <input type="date"><br>
+            <button type="submit">Submit</button>
+        </div>
+             </div>
+           
+        </div>
+    </div>
+    </div>
+</body>
+</html>

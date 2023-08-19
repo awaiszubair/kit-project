@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-1 ul li:hover{
+    border-bottom: 4px solid black;
+    width: 50%;
+    transition: 0.5s;
+}
+button{padding: 0.3rem;background-color: black;color: white;}
+@media only screen and (max-width: 898px) {
+    body {
+      background-color: lightblue;
+    }
+    html{
+        font-size: 0.6rem;
+    }
+    header{background-color: white;}
+  }
+  @media only screen and (max-width: 618px) {
+    body {
+      background-color: lightblue;
+    }
+    html{
+        font-size: 0.6rem;
+    }
+    header{background-color: white;}
+
+    .main-2 .options{padding: 0rem;}
+    
+  }
+  @media only screen and (max-width: 606px) {
+    body {
+      background-color: lightblue;
+    }
+    html{
+        font-size: 0.6rem;
+
+    }
+    button{padding: 0.1rem;}
+    header{background-color: white;}
+    .main-2 .options{padding: 0rem;display: flex;flex-direction: column;}
+    .main-2 .options select, .search{width: 50%;margin-top: 1rem;}
+    
+  }
+  @media only screen and (max-width: 540px) {
+    body {
+      background-color: lightblue;
+    }
+    html{
+        font-size: 0.4rem;
+    }
+    button{padding: 0.1rem;}
+
+    header{background-color: white;}
+
+    .main-2 .options{padding: 0rem;display: flex;flex-direction: column;}
+    .main-2 .options select, .search{width: 50%;margin-top: 1rem;}
+    
+  }
+  
+  @media only screen and (max-width: 364px) {
+    body {
+      background-color: lightblue;
+    }
+    html{
+        font-size: 0.6rem;
+    }
+    .main-1 ul li{padding: 0rem;}
+    .main-1{width: 100%;}
+    .main-1 ul{display: flex;justify-content: center;align-items: center;}
+    .main-2{width: 100%;}
+    .main{display: flex;flex-direction: column;justify-content: center;align-items: center;}
+    button{padding: 0.1rem;}
+
+    header{background-color: white;}
+
+    
+  }
